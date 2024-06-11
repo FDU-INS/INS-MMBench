@@ -9,14 +9,18 @@ INS-MMBench is the first comprehensive LVLMs benchmark for the insurance domain,
 ![task overview](assets/task_overview.png)
 
 ## Evaluation Results Overview
-- GPT-4o outperforms all other models, emerging as the top-performing LVLM on the INS-MMBench with a score of 72.91. This is the only model with an overall score exceeding 70, underscoring the challenging nature of the INS-MMBench. Most LVLMs scored below 60, and some even underperformed relative to a random guess baseline of 25 in certain insurance categories, indicating significant potential for improvement in applying LVLMs within the insurance domain.
-![Example Chart](assets/overall_progress.png)
+Overall, GPT-4o outperforms all other models, emerging as the top-performing LVLM on the INS-MMBench with a score of 72.91. This is the only model with an overall score exceeding 70, underscoring the challenging nature of the INS-MMBench. Most LVLMs scored below 60, and some even underperformed relative to a random guess baseline of 25 in certain insurance categories, indicating significant potential for improvement in applying LVLMs within the insurance domain. Besides, we have following observations:
 
+- LVLMs show significant variance across different types of insurance.
+- LVLMs show significant variance across different meta-tasks.
+- Narrowing gap between open-source and closed-source LVLMs.
+![result](assets/result_across_insurance_type.png)
 
+![result](assets/result_across_meta_task.png)
 
 ## 💐 Acknowledgement
 We express our sincere gratitude to the following projects:
-- [Project Name](Project link) provides useful out-of-the-box tools and implements many advanced models. Thanks for their selfless dedication.
+- [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) provides useful out-of-the-box tools and implements many advanced models. Thanks for their selfless dedication.
 
 ## 🖊️ Citation 
 If you find our work useful in your project or research, please use the following BibTeX entry to cite our paper. Thanks!
