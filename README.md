@@ -24,3 +24,11 @@ We express our sincere gratitude to the following projects:
 
 ## 🖊️ Citation 
 If you find our work useful in your project or research, please use the following BibTeX entry to cite our paper. Thanks!
+```
+@article{insmmbench,
+    title={INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs’ Performance in Insurance}, 
+    author={Lin, Chenwei and Lyu, Hanjia and Xu, Xian and Luo, Jiebo},
+    journal={arXiv preprint arXiv:2406.09105},
+    year={2024}
+}
+```
