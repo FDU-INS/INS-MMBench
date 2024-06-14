@@ -1,7 +1,7 @@
 # INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance
-This repository is the official implementation of INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance(arXiv link).
+This repository is the official implementation of INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance([arXiv link](https://arxiv.org/abs/2406.09105)).
 
-> INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance(arXiv link)  
+> INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance([arXiv link](https://arxiv.org/abs/2406.09105))  
 > Chenwei Lin<sup>\*</sup>, Hanjia Lyu, Xian Xu, Jiebo Luo  
 
 ## Introduction
