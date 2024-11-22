@@ -76,7 +76,7 @@ def main():
                     dump(res, result_file.replace('.xlsx', '_prefetch.xlsx'))
                 
             if rank == 0 and args.mode == 'all':
-                if listinstr(['MMBench', 'CCBench', 'SEEDBench_IMG', 'MMMU', 'ScienceQA', 'AI2D'], dataset_name):
+                if listinstr(['MMBench', 'INS-MMBench', 'SEEDBench_IMG', 'MMMU', 'ScienceQA', 'AI2D'], dataset_name):
                     multiple_choice_eval(result_file, dataset=dataset_name, model='chatgpt-0613', nproc=args.nproc, verbose=args.verbose)
                 elif listinstr(['MME', 'Hallusion'], dataset_name):
                     YOrN_eval(result_file, model='chatgpt-0613', nproc=args.nproc, verbose=args.verbose, dataset=dataset_name)
