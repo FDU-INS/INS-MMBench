@@ -23,7 +23,7 @@ Overall, GPT-4o outperforms all other models, emerging as the top-performing LVL
 To set up the project, run the following commands:
 
 ```bash
-git clone https://github.com/open-compass/VLMEvalKit.git
+git clone https://github.com/FDU-INS/INS-MMBench.git
 cd INS-MMBench
 pip install -r requirements.txt
 ```
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 - For models not listed in `supported_VLM`, you can customize the configuration.
 
 #### 2. Benchmark Download
-- The datasets can be downloaded through the provided Dropbox link (**[Link]**).
+- The datasets can be downloaded through the provided Dropbox link (**[(https://www.dropbox.com/scl/fi/hpwb7f7k14cdxwx7mau87/INS-MMBench.tsv?rlkey=vmu8pvzbto70g75r2esokadbi&st=8q9ruyo8&dl=1)]**).
 - Place the dataset folder in the default path `$HOME/LMUData` or a custom path.
 
 #### 3. `.env` File Setup
