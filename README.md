@@ -26,7 +26,7 @@ To set up the project, run the following commands:
 git clone https://github.com/open-compass/VLMEvalKit.git
 cd INS-MMBench
 pip install -r requirements.txt
-```bash
+```
 
 ### Step 2: Configuration
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 #### Example Command
 ```bash
 python run.py --data INS-MMBench --model GPT4o --verbose --nproc 4
-
+```
 The final results will be saved in a folder named after the model used for evaluation.
 
 ## 💐 Acknowledgement
