@@ -26,6 +26,7 @@ To set up the project, run the following commands:
 git clone https://github.com/open-compass/VLMEvalKit.git
 cd INS-MMBench
 pip install -r requirements.txt
+```bash
 
 ### Step 2: Configuration
 
