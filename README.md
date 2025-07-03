@@ -59,7 +59,7 @@ pip install -r requirements.txt
 - For models not listed in `supported_VLM`, you can customize the configuration.
 
 #### 2. Benchmark Download
-- The datasets can be downloaded through the provided Dropbox link (**[link](https://www.dropbox.com/scl/fi/hpwb7f7k14cdxwx7mau87/INS-MMBench.tsv?rlkey=vmu8pvzbto70g75r2esokadbi&st=8q9ruyo8&dl=1)**).
+- The datasets can be downloaded through the provided [Hugging Face link](https://huggingface.co/datasets/FDU-INS/INS-MMBench) .
 - Place the dataset folder in the default path `$HOME/LMUData` or a custom path.
 
 #### 3. `.env` File Setup
