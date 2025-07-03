@@ -135,8 +135,16 @@ def DATASET_TYPE(dataset):
         return 'Y/N'
     elif 'coco' in dataset:
         return 'Caption'
-    elif 'multi' in dataset:
-        return 'multi'
+    elif 'multi_step_claim' in dataset:
+        return 'multi_step_claim'
+    elif 'multi_step_property' in dataset:
+        return 'multi_step_property'
+    elif 'multi_step_agri' in dataset:
+        return 'multi_step_agri'
+    elif 'multi_step_liability' in dataset:
+        return 'multi_step_liability'
+    elif 'multi_step_health' in dataset:
+        return 'multi_step_health'
     elif listinstr(['ocrvqa', 'textvqa', 'chartqa', 'mathvista', 'docvqa', 'infovqa', 'llavabench',
                     'mmvet', 'ocrbench','textfree_test'], dataset):
         return 'VQA'
