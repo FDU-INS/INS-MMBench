@@ -16,8 +16,8 @@ INS-MMBench is the first comprehensive LVLMs benchmark for the insurance domain,
 
 INS-MMBench includes a total of 12,052 images, 10,372 thoroughly designed questions (including multiple-choice visual questions and free-text visual questions), comprehensively covering 5 scenario tasks, 12 meta-tasks and 22 fundamental tasks.
 <div style="display: flex; justify-content: center;">
-    <img src="asset/Pyramid.png" width="45%">
-    <img src="asset/task_overview.png" width="45%">
+    <img src="assets/Pyramid.png" width="45%">
+    <img src="assets/task_overview.png" width="45%">
 </div>
 
 ## Evaluation Results Overview
@@ -32,12 +32,12 @@ Our experiments consist of two stages. In the first stage, we evaluate meta-task
 - Narrowing gap between open-source and closed-source LVLMs: While **closed-source LVLMs** still hold an advantage, some **open-source models** are approaching comparable performance, indicating that **training high-performance, domain-specific LVLMs** could be a key strategy for insurance applications.  
 
 <div style="display: flex; justify-content: center;">
-    <img src="asset/evaluation_insurance_type.png" width="30%">
-    <img src="asset/evaluation_meta_task.png" width="55%">
+    <img src="assets/evaluation_insurance_type.png" width="30%">
+    <img src="assets/evaluation_meta_task.png" width="55%">
 </div>
 
 <div style="display: flex; justify-content: center;">
-    <img src="asset/evaluation_scenario_task.png" width="60%">
+    <img src="assets/evaluation_scenario_task.png" width="60%">
 </div>
 
 ## Quick start
