@@ -2,11 +2,21 @@
 This repository is the official implementation of INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance ([arXiv link](https://arxiv.org/abs/2406.09105)).
 
 > INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance ([arXiv link](https://arxiv.org/abs/2406.09105))  
-> Chenwei Lin<sup>\*</sup>, Hanjia Lyu, Xian Xu, Jiebo Luo  
+> Chenwei Lin<sup>1</sup>, Hanjia Lyu<sup>2</sup>, Xian Xu<sup>1</sup>, Jiebo Luo<sup>2</sup>  
+<sup>1</sup> Fudan University
+<sup>2</sup> University of Rochester
 
 ## Introduction
-INS-MMBench is the first comprehensive LVLMs benchmark for the insurance domain, it covers four representative insurance types: auto, property, health, and agricultural insurance and key insurance stages such as risk underwriting, risk monitoring and claim processing. INS-MMBench comprises a total of 2.2K thoroughly designed multiple-choice questions, covering 12 meta-tasks and 22 fundamental tasks.
-![task overview](assets/task_overview.png)
+INS-MMBench is the first comprehensive LVLMs benchmark for the insurance domain, it covers four representative insurance types: auto, property, health, and agricultural insurance and key insurance stages such as risk underwriting, risk monitoring and claim processing. INS-MMBench consists of three layers task: 
+ - Fundamental task, which focuses on the understanding of individual insurance-related visual elements;
+ - Meta-task, which involves the compositional understanding of multiple insurance-related visual elements;
+ - Scenario task, which pertains to real-world insurance tasks requiring multi-step reasoning and decision-making.
+
+INS-MMBench includes a total of 12,052 images, 10,372 thoroughly designed questions (including multiple-choice visual questions and free-text visual questions), comprehensively covering 5 scenario tasks, 12 meta-tasks and 22 fundamental tasks.
+<div style="display: flex; justify-content: center;">
+    <img src="asset/Pyramid.png" width="45%">
+    <img src="asset/task_overview.png" width="45%">
+</div>
 
 ## Evaluation Results Overview
 Overall, GPT-4o outperforms all other models, emerging as the top-performing LVLM on the INS-MMBench with a score of 72.91. This is the only model with an overall score exceeding 70, underscoring the challenging nature of the INS-MMBench. Most LVLMs scored below 60, and some even underperformed relative to a random guess baseline of 25 in certain insurance categories, indicating significant potential for improvement in applying LVLMs within the insurance domain. Besides, we have following observations:
