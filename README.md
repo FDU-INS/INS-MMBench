@@ -1,5 +1,5 @@
 # INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance
-This repository is the official implementation of INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance ([arXiv link](https://arxiv.org/abs/2406.09105)).
+[📄Paper Link](https://arxiv.org/pdf/2406.09105) | [🤗Hugging face](https://huggingface.co/datasets/FDU-INS/INS-MMBench)
 
 > INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance
 > 
