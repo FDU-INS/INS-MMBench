@@ -1,10 +1,12 @@
 # INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance
 This repository is the official implementation of INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance ([arXiv link](https://arxiv.org/abs/2406.09105)).
 
-> INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance ([arXiv link](https://arxiv.org/abs/2406.09105))  
+> INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance
+> 
 > Chenwei Lin<sup>1</sup>, Hanjia Lyu<sup>2</sup>, Xian Xu<sup>1</sup>, Jiebo Luo<sup>2</sup>  
-<sup>1</sup> Fudan University
-<sup>2</sup> University of Rochester
+<sup>1</sup> Fudan University  <sup>2</sup> University of Rochester
+
+🔥 Accepted for publication in [ICCV 2025](https://iccv.thecvf.com/)
 
 ## Introduction
 INS-MMBench is the first comprehensive LVLMs benchmark for the insurance domain, it covers four representative insurance types: auto, property, health, and agricultural insurance and key insurance stages such as risk underwriting, risk monitoring and claim processing. INS-MMBench consists of three layers task: 
@@ -19,14 +21,24 @@ INS-MMBench includes a total of 12,052 images, 10,372 thoroughly designed questi
 </div>
 
 ## Evaluation Results Overview
-Overall, GPT-4o outperforms all other models, emerging as the top-performing LVLM on the INS-MMBench with a score of 72.91. This is the only model with an overall score exceeding 70, underscoring the challenging nature of the INS-MMBench. Most LVLMs scored below 60, and some even underperformed relative to a random guess baseline of 25 in certain insurance categories, indicating significant potential for improvement in applying LVLMs within the insurance domain. Besides, we have following observations:
+Our experiments consist of two stages. In the first stage, we evaluate meta-tasks and fundamental tasks, conducting evaluation on all selected LVLMs to assess their performance in fundamental multimodal insurance tasks. In the second stage, we select a subset of top-performing models for further scenario task evaluation, where models are evaluated on end-to-end multimodal reasoning tasks to assess their effectiveness in real-world insurance applications. According to the evaluation results, we have following observations:
 
-- LVLMs show significant variance across different types of insurance.
-- LVLMs show significant variance across different meta-tasks.
-- Narrowing gap between open-source and closed-source LVLMs.
-![result](assets/result_across_insurance_type.png)
+- GPT-4o leads in performance but highlights challenges for LVLMs in insurance tasks: GPT-4o outperforms all other models with a score of **69.70**, but most LVLMs do not significantly surpass human performance across various insurance tasks, indicating substantial room for improvement in this domain.  
 
-![result](assets/result_across_meta_task.png)
+- LVLMs show significant variance across different insurance types and meta-tasks: LVLMs perform better in **auto and health insurance** tasks than in **property and agricultural insurance**, excelling in **visual perception tasks** but struggling with **knowledge-intensive reasoning tasks**, suggesting a progressive adoption strategy focused on their strengths.  
+
+- LVLMs exhibit significant limitations in complex insurance scenarios: Current LVLMs face challenges in **multi-step reasoning**, with only a few tasks exceeding **80% accuracy**, emphasizing the need for **domain-specific datasets** and **reinforcement learning** to enhance reasoning capabilities for insurance applications.  
+
+- Narrowing gap between open-source and closed-source LVLMs: While **closed-source LVLMs** still hold an advantage, some **open-source models** are approaching comparable performance, indicating that **training high-performance, domain-specific LVLMs** could be a key strategy for insurance applications.  
+
+<div style="display: flex; justify-content: center;">
+    <img src="asset/evaluation_insurance_type.png" width="30%">
+    <img src="asset/evaluation_meta_task.png" width="55%">
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <img src="asset/evaluation_scenario_task.png" width="60%">
+</div>
 
 ## Quick start
 ### Step 1: Installation
@@ -75,10 +87,6 @@ python run.py --data INS-MMBench --model GPT4o --verbose --nproc 4
 ```
 The final results will be saved in a folder named after the model used for evaluation.
 
-## 💐 Acknowledgement
-We express our sincere gratitude to the following projects:
-- [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) provides useful out-of-the-box tools and implements many advanced models. Thanks for their selfless dedication.
-
 ## 🖊️ Citation 
 If you find our work useful in your project or research, please use the following BibTeX entry to cite our paper. Thanks!
 ```
@@ -89,3 +97,11 @@ If you find our work useful in your project or research, please use the followin
     year={2024}
 }
 ```
+
+## 📜 Related Works
+Explore our related researches:
+- [Harnessing gpt-4v (ision) for insurance: A preliminary exploration](https://arxiv.org/pdf/2404.09690)
+
+## 💐 Acknowledgement
+We express our sincere gratitude to the following projects:
+- [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) provides useful out-of-the-box tools and implements many advanced models. Thanks for their selfless dedication.
