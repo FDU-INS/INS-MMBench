@@ -87,6 +87,28 @@ python run.py --data INS-MMBench --model GPT4o --verbose --nproc 4
 ```
 The final results will be saved in a folder named after the model used for evaluation.
 
+## 🔁 Reproducibility
+### Table 3
+```bash
+python reproducibility/table_3.py
+```
+### Table 4
+```bash
+python reproducibility/table_4.py
+```
+### Table 5
+```bash
+python reproducibility/table_5.py
+```
+### Table 6
+```bash
+python reproducibility/table_6.py
+```
+### Table 7
+```bash
+python reproducibility/table_7.py
+```
+
 ## 🖊️ Citation 
 If you find our work useful in your project or research, please use the following BibTeX entry to cite our paper. Thanks!
 ```
