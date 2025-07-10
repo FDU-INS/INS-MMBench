@@ -56,7 +56,7 @@ for model in model_list:
         print(f"File not found: {csv_path}")
         continue
     
-    df = pd.read_csv(csv_path, sep="\t")
+    df = pd.read_csv(csv_path)
     
     row = df.loc[df["split"] == "none"].iloc[0]
     
