@@ -51,7 +51,7 @@ class GeminiWrapper(BaseAPI):
             for pth in inputs:
                 if osp.exists(pth) or pth.startswith('http'):
                     pure_text = False
-        model = genai.GenerativeModel('gemini-pro') if pure_text else genai.GenerativeModel('gemini-pro-vision')
+        model = genai.GenerativeModel('gemini-1.5-flash') if pure_text else genai.GenerativeModel('gemini-1.5-flash')
         if isinstance(inputs, str):
             messages = [inputs] if self.system_prompt is None else [self.system_prompt, inputs]
         elif pure_text:
