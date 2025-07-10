@@ -16,7 +16,7 @@ model_list = [
     "LLaVA"
 ]
 
-data_name = "INS-MMBench"
+data_name = "INS_MMBench_fundamental"
 
 for model in model_list:
     cmd = [
