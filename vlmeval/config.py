@@ -40,7 +40,7 @@ api_models = {
     'GPT4o_HIGH': partial(GPT4V, model='gpt-4o-2024-05-13', temperature=0, img_size=-1, img_detail='high', retry=10),
     'GPT4o_MINI': partial(GPT4V, model='gpt-4o-mini-2024-07-18', temperature=0, img_size=512, img_detail='high', retry=10),
     # Gemini-V
-    'GeminiProVision': partial(GeminiProVision, temperature=0, retry=10),
+    'Gemini1_5Flash': partial(GeminiProVision, temperature=0, retry=10),
     'Gemini2_5': partial(GPT4V, model='gemini-2.5-flash-preview-04-17', img_size=512, temperature=0, retry=10),
     # Qwen-VL Series
     'QwenVLPlus': partial(QwenVLAPI, model='qwen-vl-plus', temperature=0, retry=10),
