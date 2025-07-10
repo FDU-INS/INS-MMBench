@@ -5,7 +5,7 @@ import os
 model_list = [
     "GPT4o",
     "QwenVLMax",
-    "Gemini 1.5 Flash",
+    "Gemini1_5Flash",
     "GLM4V",
     "GPT4V",
     "GPT4o_MINI",
